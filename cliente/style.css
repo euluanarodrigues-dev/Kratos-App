@@ -1,0 +1,96 @@
+/* Configurações Gerais da Página */
+body {
+    background-color: #121212; /* Fundo preto/cinza escuro */
+    color: #F5F5F5;            /* Texto claro */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #D4AF37; /* Dourado Kratos */
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #A0A0A0;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Estilo das Seções (Blocos da Tela) */
+section {
+    background-color: #1E1E1E; /* Cinza um pouco mais claro que o fundo */
+    border: 1px solid #2C2C2C;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px; /* Mantém o tamanho perfeito para telemóveis */
+    box-sizing: border-box;
+}
+
+section h2 {
+    color: #D4AF37;
+    font-size: 1.2rem;
+    margin-top: 0;
+    border-bottom: 1px solid #2C2C2C;
+    padding-bottom: 10px;
+}
+
+/* Ajustes de Inputs e Seletores */
+select, input[type="date"], input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #2A2A2A;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #FFF;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* Estilo para as opções de Serviço (Cards de Seleção) */
+.servico-option {
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.servico-option:hover {
+    border-color: #D4AF37;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #D4AF37;
+    color: #121212;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #AA8B2C;
+}

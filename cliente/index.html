@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratos - Agendamento de Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>KRATOS</h1>
+        <p>Corte de respeito. Agende seu horário.</p>
+        <button>Entrar / Criar Conta</button>
+    </header>
+
+    <main>
+       <section>
+            <h2>1. Escolha o Profissional</h2>
+            <select>
+                <option value="barbeiro1">Barbeiro 1</option>
+                <option value="barbeiro2">Barbeiro 2</option>
+                <option value="barbeiro3">Barbeiro 3</option>
+                <option value="barbeiro4">Barbeiro 4</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>2. Selecione o Serviço</h2>
+            <div>
+                <input type="radio" id="corte" name="servico" value="corte">
+                <label for="corte">
+                    <strong>Corte de Cabelo</strong> - R$ 40,00 <br>
+                    <span>Corte moderno na tesoura ou máquina.</span>
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="barba" name="servico" value="barba">
+                <label for="barba">
+                    <strong>Barba Completa</strong> - R$ 30,00 <br>
+                    <span>Alinhamento com toalha quente e navalha.</span>
+                </label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="combo" name="servico" value="combo">
+                <label for="combo">
+                    <strong>Combo Kratos (Cabelo + Barba)</strong> - R$ 60,00 <br>
+                    <span>O trato completo com desconto.</span>
+                </label>
+            </div>
+        </section>
+
+        <section>
+            <h2>3. Escolha a Data e Horário</h2>
+            <label for="data">Data:</label>
+            <input type="date" id="data">
+            <br><br>
+            <label for="hora">Horários Disponíveis:</label>
+            <select id="hora">
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>4. Seus Dados</h2>
+            <input type="text" placeholder="Seu Nome completo">
+            <br><br>
+            <input type="tel" placeholder="Seu WhatsApp">
+            <br><br>
+            <button type="submit">AGENDAR HORÁRIO</button>
+        </section>
+    </main>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratos - Painel Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Painel Administrativo - KRATOS</h1>
+        <p>Bem-vindo de volta, Barbeiro!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Filtrar Agenda do Dia</h2>
+            <label for="filtro-barbeiro">Ver agenda de:</label>
+            <select id="filtro-barbeiro">
+                <option value="todos">Todos os Barbeiros</option>
+                <option value="barbeiro1">Barbeiro 1</option>
+                <option value="barbeiro2">Barbeiro 2</option>
+                <option value="barbeiro3">Barbeiro 3</option>
+                <option value="barbeiro4">Barbeiro 4</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>📅 Agenda do Mês</h2>
+            <table border="1" cellpadding="10" style="border-collapse: collapse; width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Cliente</th>
+                        <th>Barbeiro</th>
+                        <th>Serviço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-agendamentos">
+                    </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>➕ Novo Agendamento Manual</h2>
+            <p>Use este formulário se o cliente ligar ou pedir pelo WhatsApp:</p>
+            <form>
+                <input type="text" placeholder="Nome do Cliente" required><br><br>
+                <input type="tel" placeholder="WhatsApp do Cliente"><br><br>
+                
+                <label>Serviço:</label>
+                <select>
+                    <option value="corte">Corte de Cabelo</option>
+                    <option value="barba">Barba Completa</option>
+                    <option value="combo">Combo Kratos</option>
+                </select><br><br>
+
+                <label>Data:</label>
+                <input type="date">
+                <br><br>
+                <label>Hora:</label>
+                <input type="time"><br><br>
+
+                <button type="submit">Salvar Agendamento</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
