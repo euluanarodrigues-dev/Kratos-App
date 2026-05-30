@@ -11,6 +11,7 @@ O Kratos é um **software vivo** e está em constante evolução. Novas funciona
 
 ### **Fase 1: Interface Visual (HTML/CSS)**
 - [ ] Tela de agendamento para o cliente.
+- [ ] Vitrine de serviços interativa com descrição e preços (Cabelo, Barba, Combos).
 - [ ] Painel do barbeiro para ver os horários do dia.
 - [ ] Tela de cadastro/login de clientes.
 
